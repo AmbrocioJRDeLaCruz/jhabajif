@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/calc_horizontal_margin"
+    android:paddingRight="@dimen/calc_horizontal_margin"
+    android:paddingTop="@dimen/calc_vertical_margin"
+    android:paddingBottom="@dimen/calc_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo_degradado">
+
+    <LinearLayout
+        android:id="@+id/listButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dp">
+
+        <Button
+            android:id="@+id/btn_longitud"
+            android:layout_width="@dimen/unitButton"
+            android:layout_height="@dimen/unitButtonHeight"
+            android:drawableTop="@drawable/ic_baseline_straighten_24"
+            android:text="@string/longitud"
+            android:theme="@style/ButtonLongitud"
+            android:onClick="btn_longitud"/>
+
+        <Button
+            android:id="@+id/btn_tiempo"
+            android:layout_width="@dimen/unitButton"
+            android:layout_height="@dimen/unitButtonHeight"
+            android:drawableTop="@drawable/ic_baseline_access_time_24"
+            android:text="@string/tiempo"
+            android:theme="@style/ButtonTiempo"
+            android:onClick="btn_tiempo"/>
+
+        <Button
+            android:id="@+id/btn_masa"
+            android:layout_width="@dimen/unitButton"
+            android:layout_height="@dimen/unitButtonHeight"
+            android:drawableTop="@drawable/ic_baseline_balance_24"
+            android:text="@string/masa"
+            android:theme="@style/ButtonMasa"
+            android:onClick="btn_masa" />
+
+        <Button
+            android:id="@+id/btn_Temperatura"
+            android:layout_width="@dimen/unitButton"
+            android:layout_height="@dimen/unitButtonHeight"
+            android:drawableTop="@drawable/ic_outline_device_thermostat_24"
+            android:text="@string/temperatura"
+            android:theme="@style/ButtonTemperatura"
+            android:onClick="btn_temperatura"/>
+
+    </LinearLayout>
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/textInput"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/listButton"-->
+<!--        android:layout_marginTop="36dp">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="200dp"-->
+<!--            android:background="@drawable/style_border_edittext"-->
+<!--            android:inputType="number"-->
+<!--            android:theme="@style/edittext"-->
+<!--            android:textColor="@color/white"/>-->
+
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/textInput02"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/textInput"-->
+<!--        android:layout_marginTop="32dp">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="200dp"-->
+<!--            android:inputType="number"-->
+<!--            android:theme="@style/edittext"-->
+<!--            android:background="@drawable/style_border_edittext"-->
+<!--            android:textColor="@color/white"/>-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <EditText
+        android:id="@+id/EditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_below="@+id/listButton"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/style_border_edittext"
+        android:inputType="number"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/EditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_below="@+id/EditText1"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/style_border_edittext"
+        android:inputType="number"
+        android:textColor="@color/white"/>
+
+    <Spinner
+        android:id="@+id/Spinner01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spinner"
+        android:layout_below="@+id/listButton"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="185dp"
+        android:background="@drawable/style_border_edittext"/>
+
+    <Spinner
+        android:id="@+id/Spinner02"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spinner"
+        android:layout_below="@+id/Spinner01"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="185dp"
+        android:background="@drawable/style_border_edittext"/>
+
+
+</RelativeLayout>
